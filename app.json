@@ -6,22 +6,20 @@
     "orientation": "default",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#050505"
       }
     },
+
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./public/assets/favicon.png"
-    },
-    "plugins": [
-      "expo-image",
-      "expo-file-system"
-    ]
+      "output": "static"
+    }
   }
 }
