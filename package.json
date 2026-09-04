@@ -10,7 +10,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "build:web": "expo export --platform web",
-    ""typecheck": "tsc --noEmit --project ./tsconfig.json"
+    "typecheck": "tsc --noEmit --project ./tsconfig.json"
   },
   "dependencies": {
     "expo": "~57.0.1",
