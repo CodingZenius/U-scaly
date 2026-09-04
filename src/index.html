@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+  <meta
+    name="description"
+    content="U-scaly — fast, private mathematical image upscaling."
+  />
+  <meta name="theme-color" content="#050505" />
+  <title>U-scaly</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Animated light environment -->
+  <div id="lightshow" aria-hidden="true">
+    <div class="lava-light lava-light-1"></div>
+    <div class="lava-light lava-light-2"></div>
+    <div class="lava-light lava-light-3"></div>
+    <div class="lava-light lava-light-4"></div>
+  </div>
+  <!-- Main glass surface -->
+  <main class="glass-shell">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-mark">U</span>
+        <span class="brand-name">U-scaly</span>
+      </div>
+    </header>
+    <section class="hero">
+      <p class="eyebrow">IMAGE UPSCALING</p>
+      <h1>
+        Make your images
+        <span>larger.</span>
+      </h1>
+      <p class="hero-description">
+        Mathematical image upscaling designed to run directly on your device.
+      </p>
+      <button id="select-image" class="primary-button" type="button">
+        Select image
+      </button>
+      <input
+        id="image-input"
+        type="file"
+        accept="image/*"
+        hidden
+      />
+    </section>
+    <section
+      id="preview-area"
+      class="preview-area"
+      aria-live="polite"
+      hidden
+    >
+      <div class="image-frame">
+        <img id="image-preview" alt="Selected image preview" />
+      </div>
+      <div class="preview-actions">
+        <button id="upscale-button" class="primary-button" type="button">
+          Upscale image
+        </button>
+      </div>
+    </section>
+  </main>
+  <!-- Privacy popup -->
+  <div
+    id="privacy-popup"
+    class="privacy-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="privacy-title"
+  >
+    <div class="privacy-card">
+      <h2 id="privacy-title">Your privacy</h2>
+      <p>
+        U-scaly does not collect personal data. Images are processed locally
+        on your device whenever supported by the application.
+      </p>
+      <button id="privacy-continue" class="primary-button" type="button">
+        Continue
+      </button>
+    </div>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
