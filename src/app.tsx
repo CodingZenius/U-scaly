@@ -3,13 +3,12 @@ import {
   Platform,
   SafeAreaView,
   StyleSheet,
-  View,
+  View
 } from "react-native";
 import { Gyroscope } from "expo-sensors";
 import { WebView, WebViewMessageEvent } from "react-native-webview";
 
-const WEB_APP_URL =
-  "https://YOUR-USERNAME.github.io/u-scaly/";
+const WEB_APP_URL = "https://codingzenius.github.io/u-scaly/";
 
 export default function App() {
   const webViewRef = useRef<WebView>(null);
