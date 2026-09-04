@@ -16,10 +16,3 @@
         "backgroundColor": "#050505"
       }
     },
-
-    "web": {
-      "bundler": "metro",
-      "output": "static"
-    }
-  }
-}
